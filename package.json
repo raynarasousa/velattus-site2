@@ -4,6 +4,7 @@
   "description": "Site simples com as seguintes páginas e arquivos:",
   "main": "script.js",
   "scripts": {
+    "start": "http-server . -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/raynarasousa/velattus-site2/issues"
   },
-  "homepage": "https://github.com/raynarasousa/velattus-site2#readme"
+  "homepage": "https://github.com/raynarasousa/velattus-site2#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
