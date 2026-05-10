@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo — Funerária Velattus</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="inicio.html" class="nav-logo">Velat<span>t</span>us</a>
+  <section class="nav-links">
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="planos.html">Planos</a>
+    <a href="catalogo.html" class="active">Catálogo</a>
+    <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Olá!%20Preciso%20de%20um%20serviço%20funerário." class="nav-cta">Fale agora — WhatsApp</a>
+  </section>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <section class="breadcrumb"><a href="inicio.html">Início</a> &nbsp;/&nbsp; Catálogo de produtos</section>
+  <h1>Nosso <em>catálogo</em><br>de produtos</h1>
+  <p>Urnas funerárias e coroas de flores selecionadas com cuidado, para uma homenagem digna e respeitosa ao seu ente querido.</p>
+</section>
+
+<!-- FILTER BAR -->
+<nav class="filter-bar">
+  <button class="filter-tab active" onclick="filterSection('all', this, event)">Todos</button>
+  <button class="filter-tab" onclick="filterSection('urnas', this, event)">Urnas Funerárias</button>
+  <button class="filter-tab" onclick="filterSection('coroas', this, event)">Coroas de Flores</button>
+  <button class="filter-tab" onclick="filterSection('acessorios', this)">Acessórios</button>
+  <section class="filter-spacer"></section>
+  <span class="filter-count" id="count-label">Exibindo todos os produtos</span>
+</nav>
+
+
+<!-- ════════════════════════════════════ -->
+<!-- SEÇÃO: URNAS FUNERÁRIAS             -->
+<!-- ════════════════════════════════════ -->
+<section class="catalog-section" id="section-urnas">
+  <header class="section-header">
+    <section>
+      <span class="section-label">Urnas Funerárias</span>
+      <h2 class="section-title">Elegância e <em>dignidade</em><br>em cada detalhe.</h2>
+    </section>
+    <p class="section-note">Todas as urnas podem ser personalizadas. Consulte nossos agentes para opções especiais.</p>
+  </header>
+
+  <!-- DESTAQUES (cards grandes) -->
+  <section class="featured-row" style="margin-bottom: 20px;">
+
+    <article class="featured-card">
+      <section class="featured-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Imperial">
+        <span class="img-placeholder-icon">⬜</span>
+        <span style="font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:1px;">IMAGEM DA URNA</span>
+        <span class="img-add-hint">Adicione a imagem via src=""</span>
+        <span class="product-badge badge-premium">Premium</span>
+      </section>
+      <section class="featured-info">
+        <span class="featured-tag">Urna · Destaque</span>
+        <h3>Imperial<br>Mogno Escuro</h3>
+        <p>Mogno maciço com acabamento laqueado e detalhes em bronze. Elegância clássica e atemporal.</p>
+        <section class="featured-price-row">
+          <span class="featured-price-label">A partir de</span>
+          <span class="featured-price placeholder">Consulte o valor</span>
+        </section>
+        <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Olá!%20Tenho%20interesse%20na%20Urna%20Imperial%20Mogno%20Escuro." class="featured-btn">💬 Consultar</a>
+      </section>
+    </article>
+
+    <article class="featured-card">
+      <section class="featured-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Celestial">
+        <span class="img-placeholder-icon">⬜</span>
+        <span style="font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:1px;">IMAGEM DA URNA</span>
+        <span class="img-add-hint">Adicione a imagem via src=""</span>
+        <span class="product-badge badge-destaque">Destaque</span>
+      </section>
+      <section class="featured-info">
+        <span class="featured-tag">Urna · Destaque</span>
+        <h3>Celestial<br>Branco Perolado</h3>
+        <p>Acabamento perolado com bordas douradas. Sofisticação e leveza para a última homenagem.</p>
+        <section class="featured-price-row">
+          <span class="featured-price-label">A partir de</span>
+          <span class="featured-price placeholder">Consulte o valor</span>
+        </section>
+        <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Olá!%20Tenho%20interesse%20na%20Urna%20Celestial%20Branco%20Perolado." class="featured-btn">💬 Consultar</a>
+      </section>
+    </article>
+
+  </section>
+
+  <!-- GRID DE PRODUTOS -->
+  <section class="product-grid">
+
+    <!-- PRODUTO 1 -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Serenità">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · Madeira</p>
+        <h3 class="product-name">Serenità</h3>
+        <p class="product-desc">Madeira de cedrinho com acabamento natural. Linhas simples e sóbrias.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Urna%20Serenità." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PRODUTO 2 -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Aurora">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+        <span class="product-badge badge-novo">Novo</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · Madeira</p>
+        <h3 class="product-name">Aurora</h3>
+        <p class="product-desc">Tom marfim com detalhes entalhados à mão. Acabamento acetinado.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Urna%20Aurora." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PRODUTO 3 -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Eternidade">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · MDF Premium</p>
+        <h3 class="product-name">Eternidade</h3>
+        <p class="product-desc">MDF revestido em tecido de veludo bordô. Interior forrado em seda.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Urna%20Eternidade." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PRODUTO 4 -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Paz Eterna">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · Econômica</p>
+        <h3 class="product-name">Paz Eterna</h3>
+        <p class="product-desc">Acabamento branco liso com detalhes discretos. Opção digna e acessível.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Urna%20Paz%20Eterna." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PRODUTO 5 -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Nobre">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+        <span class="product-badge badge-destaque">Destaque</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · Madeira Nobre</p>
+        <h3 class="product-name">Nobre Tauari</h3>
+        <p class="product-desc">Tauari envernizado com apliques em metal dourado. Requinte e tradição.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Urna%20Nobre%20Tauari." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PRODUTO 6 -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Luxo">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+        <span class="product-badge badge-premium">Premium</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · Luxo</p>
+        <h3 class="product-name">Grand Luxe</h3>
+        <p class="product-desc">Mogno seleto com apliques em latão e interior em seda capitonê.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Urna%20Grand%20Luxe." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PRODUTO 7 -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Urna Infantil">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · Infantil</p>
+        <h3 class="product-name">Anjo de Luz</h3>
+        <p class="product-desc">Urna branca com detalhes suaves em azul ou rosa. Tamanhos infantis disponíveis.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Urna%20Infantil%20Anjo%20de%20Luz." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PRODUTO 8 — PARA ADICIONAR UM PRODUTO NOVO, COPIE ESTE BLOCO -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Novo Produto">
+        <span class="img-placeholder-icon">⬜</span>
+        <span class="img-placeholder-text">Imagem da urna</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Urna · Categoria</p>
+        <h3 class="product-name">Nome do Produto</h3>
+        <p class="product-desc">Descrição breve do material e acabamento da urna.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348" class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+  </section><!-- /product-grid urnas -->
+</section><!-- /section urnas -->
+
+<hr class="divider">
+
+<!-- ════════════════════════════════════ -->
+<!-- SEÇÃO: COROAS DE FLORES             -->
+<!-- ════════════════════════════════════ -->
+<section class="catalog-section" id="section-coroas">
+  <header class="section-header">
+    <section>
+      <span class="section-label">Coroas de Flores</span>
+      <h2 class="section-title">Uma última <em>homenagem</em><br>com flores naturais.</h2>
+    </section>
+    <p class="section-note">Flores naturais e artificiais disponíveis. Personalizamos com faixas e mensagens.</p>
+  </header>
+
+  <!-- DESTAQUES COROAS -->
+  <section class="featured-row" style="margin-bottom: 20px;">
+
+    <article class="featured-card">
+      <section class="featured-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Coroa Imperial">
+        <span class="img-placeholder-icon">🌸</span>
+        <span style="font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:1px;">IMAGEM DA COROA</span>
+        <span class="img-add-hint">Adicione a imagem via src=""</span>
+        <span class="product-badge badge-destaque">Destaque</span>
+      </section>
+      <section class="featured-info">
+        <span class="featured-tag">Coroa · Destaque</span>
+        <h3>Coroa Imperial<br>Rosas Brancas</h3>
+        <p>Composição com rosas brancas naturais, gérberas e folhagens. Faixa personalizada inclusa.</p>
+        <section class="featured-price-row">
+          <span class="featured-price-label">A partir de</span>
+          <span class="featured-price placeholder">Consulte o valor</span>
+        </section>
+        <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Coroa%20Imperial%20Rosas%20Brancas." class="featured-btn">💬 Consultar</a>
+      </section>
+    </article>
+
+    <article class="featured-card">
+      <section class="featured-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Arranjo Especial">
+        <span class="img-placeholder-icon">🌺</span>
+        <span style="font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:1px;">IMAGEM DO ARRANJO</span>
+        <span class="img-add-hint">Adicione a imagem via src=""</span>
+        <span class="product-badge badge-destaque">Destaque</span>
+      </section>
+      <section class="featured-info">
+        <span class="featured-tag">Arranjo · Destaque</span>
+        <h3>Arranjo<br>Flor do Campo</h3>
+        <p>Composição colorida com flores do campo, lilás e orquídeas. Elegância natural e vibrante.</p>
+        <section class="featured-price-row">
+          <span class="featured-price-label">A partir de</span>
+          <span class="featured-price placeholder">Consulte o valor</span>
+        </section>
+        <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20no%20Arranjo%20Flor%20do%20Campo." class="featured-btn">💬 Consultar</a>
+      </section>
+    </article>
+
+  </section>
+
+  <!-- GRID COROAS -->
+  <section class="product-grid">
+
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Coroa Clássica">
+        <span class="img-placeholder-icon">🌸</span>
+        <span class="img-placeholder-text">Imagem da coroa</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Coroa · Natural</p>
+        <h3 class="product-name">Clássica Branca</h3>
+        <p class="product-desc">Crisântemos brancos naturais. Formato oval com faixa. Entrega em até 2h.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Coroa%20Clássica%20Branca." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Coroa Tricolor">
+        <span class="img-placeholder-icon">🌺</span>
+        <span class="img-placeholder-text">Imagem da coroa</span>
+        <span class="img-add-hint">src=""</span>
+        <span class="product-badge badge-destaque">Popular</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Coroa · Natural</p>
+        <h3 class="product-name">Tricolor</h3>
+        <p class="product-desc">Mix de flores coloridas com rosas, cravos e folhagens tropicais.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Coroa%20Tricolor." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Coroa Artificial">
+        <span class="img-placeholder-icon">💐</span>
+        <span class="img-placeholder-text">Imagem da coroa</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Coroa · Artificial</p>
+        <h3 class="product-name">Permanente</h3>
+        <p class="product-desc">Flores artificiais de alta qualidade. Durável, ideal para manter no túmulo.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20na%20Coroa%20Permanente." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Arranjo Mesa">
+        <span class="img-placeholder-icon">🌼</span>
+        <span class="img-placeholder-text">Imagem do arranjo</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Arranjo · Mesa</p>
+        <h3 class="product-name">Arranjo Velório</h3>
+        <p class="product-desc">Composição para mesa do velório. Lírios brancos, orquídeas e folhagens.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Interesse%20no%20Arranjo%20para%20Velório." class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+    <!-- PARA ADICIONAR MAIS COROAS, COPIE ESTE BLOCO -->
+    <article class="product-card">
+      <section class="product-img">
+        <img src="SUA-IMAGEM-AQUI.jpg" alt="Nova Coroa">
+        <span class="img-placeholder-icon">🌸</span>
+        <span class="img-placeholder-text">Imagem da coroa</span>
+        <span class="img-add-hint">src=""</span>
+      </section>
+      <section class="product-info">
+        <p class="product-category">Coroa · Categoria</p>
+        <h3 class="product-name">Nome do Produto</h3>
+        <p class="product-desc">Descrição breve da composição floral e características.</p>
+        <section class="product-footer">
+          <section class="product-price">
+            <span class="price-label">Valor</span>
+            <span class="price-value placeholder">A consultar</span>
+          </section>
+          <a href="https://api.whatsapp.com/send/?phone=5511934868348" class="btn-consult">Consultar</a>
+        </section>
+      </section>
+    </article>
+
+  </section><!-- /product-grid coroas -->
+</section><!-- /section coroas -->
+
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <section class="cta-text">
+    <h3>Precisa de ajuda para <em>escolher?</em></h3>
+    <p>Nossa equipe está disponível 24h para orientar sua família na escolha do melhor produto, com respeito e sem pressa.</p>
+  </section>
+  <section class="cta-actions">
+    <a href="https://api.whatsapp.com/send/?phone=5511934868348&text=Olá!%20Gostaria%20de%20ajuda%20para%20escolher%20um%20produto%20do%20catálogo." class="btn-primary">💬 Falar com um agente</a>
+    <a href="index.html#planos" class="btn-outline">Ver planos funerários</a>
+  </section>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <section class="footer-logo">Velat<span>t</span>us</section>
+  <p class="footer-text">© 2025 Funerária Velattus. Todos os direitos reservados.</p>
+  <section class="footer-links">
+    <a href="#">Política de Privacidade</a>
+    <a href="https://api.whatsapp.com/send/?phone=5511934868348">WhatsApp</a>
+  </section>
+</footer>
+
+<script src="catalogo.js" defer></script>
+
+</body>
+</html>  
