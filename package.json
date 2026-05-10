@@ -4,7 +4,7 @@
   "description": "Site simples com as seguintes páginas e arquivos:",
   "main": "script.js",
   "scripts": {
-    "start": "http-server . -c-1",
+    "start": "\"C:\\Program Files\\nodejs\\node.exe\" \"./node_modules/http-server/bin/http-server\" . -c-1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
