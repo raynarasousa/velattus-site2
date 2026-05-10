@@ -1,0 +1,21 @@
+{
+  "name": "velattus-site2",
+  "version": "1.0.0",
+  "description": "Site simples com as seguintes páginas e arquivos:",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raynarasousa/velattus-site2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/raynarasousa/velattus-site2/issues"
+  },
+  "homepage": "https://github.com/raynarasousa/velattus-site2#readme"
+}
