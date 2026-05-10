@@ -1,5 +1,2 @@
 @echo off
-setlocal
-set PATH=%PATH%;"C:\Program Files\nodejs"
-npm %*
-endlocal
+"C:\Program Files\nodejs\npm.cmd" %*
