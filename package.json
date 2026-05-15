@@ -2,7 +2,7 @@
   "name": "velattus-site2",
   "version": "1.0.0",
   "description": "Site simples com as seguintes páginas e arquivos:",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"

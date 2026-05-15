@@ -48,3 +48,16 @@ Depois abra `http://localhost:3000` no navegador.
 ## GitHub
 
 Repositório remoto: `https://github.com/raynarasousa/velattus-site2`
+
+## Deploy no Render
+
+1. Faça commit e push do projeto para o GitHub.
+2. No Render, crie um novo Web Service.
+3. Conecte ao repositório `raynarasousa/velattus-site2`.
+4. Use as seguintes configurações:
+   - Environment: `Node`
+   - Build command: `npm install`
+   - Start command: `npm start`
+5. O Render irá usar o `render.yaml` do repositório para detectar a aplicação.
+
+> Se o branch principal for `main`, escolha esse branch. Se for `master`, ajuste no painel do Render.

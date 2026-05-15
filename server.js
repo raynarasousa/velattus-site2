@@ -59,6 +59,9 @@ server.listen(port, () => {
   const url = `http://localhost:${port}`
   console.log(`Servidor rodando em ${url}`)
 
+  const shouldOpenBrowser = process.env.NODE_ENV !== 'production' && process.env.OPEN_BROWSER !== 'false'
+  if (!shouldOpenBrowser) return
+
   const startCommand = process.platform === 'win32'
     ? `start "" chrome "${url}"`
     : process.platform === 'darwin'

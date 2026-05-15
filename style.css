@@ -53,6 +53,15 @@ nav {
 
 .nav-logo span { color: var(--gold); }
 
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .nav-links {
   display: flex;
   gap: 32px;
@@ -784,4 +793,131 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
+}
+
+/* ---- RESPONSIVE: mobile-first ---- */
+@media (max-width: 1024px) {
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+  }
+  .hero-left {
+    padding: 48px 20px 30px;
+  }
+  .hero-right {
+    padding: 20px 20px 40px;
+  }
+  .about-grid,
+  .services-grid,
+  .plans-grid,
+  .testimonials-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    padding: 60px 20px;
+  }
+  .strip {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 20px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 30px 20px;
+  }
+  .divider {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0 20px;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 12px 20px;
+    gap: 12px;
+    z-index: 99;
+    align-items: flex-start;
+  }
+  .nav-links.open a {
+    color: rgba(255,255,255,0.95);
+    padding: 10px 0;
+  }
+  .nav-links.open a.nav-cta {
+    width: 100%;
+    text-align: center;
+    padding: 12px 14px;
+    border-radius: 4px;
+  }
+  .hero {
+    padding-bottom: 20px;
+  }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+  .hero-actions,
+  .cta-actions,
+  .plans-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-primary,
+  .btn-ghost,
+  .plan-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .info-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-visual {
+    padding: 30px;
+  }
+  .faq-q {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta-section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left {
+    padding: 36px 16px 24px;
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero-sub,
+  .plans-intro,
+  .testimonial-card p,
+  .about-text p {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .plan-price {
+    font-size: 32px;
+  }
 }
