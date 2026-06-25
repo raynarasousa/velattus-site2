@@ -227,6 +227,32 @@ nav {
 .product-img .img-add-hint {
   display: none;
 }
+
+/* ── Ajustes específicos para a seção 'Coroas de Flores' ── */
+#section-coroas .product-img {
+  /* tornar caixas quadradas (quadradinhos) */
+  aspect-ratio: 1 / 1;
+  background: var(--cream-dark);
+  padding: 8px; /* espaço para evitar corte de bordas */
+}
+#section-coroas .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* não cortar a imagem, ajustar inteira */
+  object-position: center;
+  background-color: var(--cream-dark);
+  display: block;
+}
+#section-coroas .featured-img.fslide-wrap,
+#section-coroas .featured-img {
+  /* garantir slides também visualmente centrados */
+  aspect-ratio: 1 / 1;
+}
+#section-coroas .featured-img img,
+#section-coroas .fslide img {
+  object-fit: contain;
+  object-position: center;
+}
 .img-placeholder-icon {
   font-size: 36px;
   opacity: 0.4;
