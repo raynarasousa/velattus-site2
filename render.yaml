@@ -4,7 +4,7 @@ services:
     env: node
     region: oregon
     plan: free
-    branch: master
+    branch: main
     buildCommand: npm install
     startCommand: npm start
     autoDeploy: true
